@@ -165,7 +165,7 @@ model_xgb_cv <- xgb.cv(data=as.matrix(X_train), label=as.matrix(target), objecti
 # CV: 0.8825
 
 # model building
-model_xgb <- xgboost(data=as.matrix(X_train), label=as.matrix(target), objective="binary:logistic", nrounds=10, eta=0.02, max_depth=5, subsample=0.6, colsample_bytree=0.85, min_child_weight=1, eval_metric="auc")
+model_xgb <- xgboost(data=as.matrix(X_train), label=as.matrix(target), objective="binary:logistic", nrounds=1200, eta=0.02, max_depth=5, subsample=0.6, colsample_bytree=0.85, min_child_weight=1, eval_metric="auc")
 
 # model scoring
 pred <- predict(model_xgb, as.matrix(X_test))
