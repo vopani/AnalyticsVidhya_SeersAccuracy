@@ -1,2 +1,4 @@
 # Seers Accuracy competition on Analytics Vidhya
-Will update this after final results (by 3rd May)
+
+1. This model scored 0.8856 on the public LB which ranked 1st.
+2. I will share a blog link with my approach soon.
